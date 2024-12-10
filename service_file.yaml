@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service_name
+  labels:
+    env: prod_service
+spec:
+ selector:
+      env: prod
+ports:
+    protocol: TCP
+    port: 80
+    targetPort:80
+type: ClusterIP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
